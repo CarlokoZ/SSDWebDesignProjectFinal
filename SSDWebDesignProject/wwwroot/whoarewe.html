@@ -29,6 +29,7 @@
         </nav>
     </header>
     <main>
+        <h1>Who are We</h1>
         <!--
         •	Valid HTML
         •	Well-structured and Semantic HTML
@@ -39,8 +40,6 @@
         •	Navigation lists
         •	Images and embedded media
         •	Iframes
-        •	Tables
-        •	Forms
         •	Containers (div)
         •	Id and class attributes
         •	Appropriate use of Contemporary HTML
@@ -48,9 +47,86 @@
         •	Forms
         •	Video
         •	Microdata
+             -->
 
-            ================================================== -->
-        <!-- All content goes here dakota whoarewe.html / nick sponsor.html / tallis payments.html / xavier contact.html-->
+        <p>
+            We are a small non for profit society that is trying to make miracles happen for the people who need them the most.
+            The society started in 2011 and is run entirely on a volunteer basis.
+            We collects funds from fundraising events or from personal donations.
+            When we find an individual, family or group of people that are in needed and if the funds are available
+            the society will anonymously donate a sum usually of around $400 to the people.
+            There is no credit given to any individuals within the society and if possible the people receiving the funds won’t
+            even know who the money has come from.
+        </p>
+
+        <table>
+            <tr>
+                <td>Year</td>
+                <td>Funds raised</td>
+            </tr>
+            <tr>
+                <td>2011</td>
+                <td>$12,000</td>
+            </tr>
+            <tr>
+                <td>2012</td>
+                <td>$33,000</td>
+            </tr>
+            <tr>
+                <td>2013</td>
+                <td>$41,000</td>
+            </tr>
+            <tr>
+                <td>2014</td>
+                <td>$29,000</td>
+            </tr>
+            <tr>
+                <td>2015</td>
+                <td>$55,000</td>
+            </tr>
+        </table>
+
+        <form action="#" method="post" enctype="multipart/form-data">
+            <!-- Account Info -->
+            <fieldset>
+                <legend>Create Your Account</legend>
+                <h3>Account Info</h3>
+                <label>
+                    Username:
+                    <input type="text" name="id" size="20" maxlength="10" />
+                </label>
+                <label>
+                    Password:
+                    <input type="password" name="password" size="20" maxlength="10" />
+                </label>
+                <label>
+                    Email:
+                    <input type="text" name="email" size="20" maxlength="10" />
+                </label>
+                <!-- Names -->
+                <p>
+                    <label>
+                        Surname:
+                        <input type="text" name="lname" size="20" maxlength="10" />
+                    </label>
+                    <label>
+                        Given Name:
+                        <input type="text" name="fname" size="20" maxlength="10" />
+                    </label>
+                    <label>
+                        Middle Name:
+                        <input type="text" name="mname" size="20" maxlength="10" />
+                    </label>
+                </p>
+                <p>
+                    <!-- Hidden -->
+                    <input type="hidden" name="location" value="vancouver" />
+
+                    <!-- Submit -->
+                    <input type="submit" name="submit" value="Submit" />
+                </p>
+            </fieldset>
+        </form>
     </main>
     <footer>
         <p>© 2016 - The Miracle Bucket Society</p>
