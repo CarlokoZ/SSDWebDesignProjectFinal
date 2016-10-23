@@ -14,7 +14,7 @@
 ================================================== -->
       <header>
           <nav>
-              <img id="imgHeader" src="img/logo.jpg" />
+              <img id="imgHeader" src="img/logo.jpg" alt="logo" />
               <ul>
                   <li><a href="index.html">The Miracle Bucket Society</a></li>
                   <li><a href="index.html">Home</a></li>
@@ -30,12 +30,15 @@
           <!-- All content goes here dakota index.html / nick sponsor.html / tallis payments.html / xavier contact.html-->
           <h1> Contact </h1>
           <p> There are several Ways To Contact The Miracle Bucket Society</p>
-          <h2>Contact Form</h2>
+          <a href="#contactForm">By Contact Form</a>
+		  <a href="#EmailInfo">By Email</a>
+		  <a href="#Adress">Visit Us</a>
+              <h2 id="contactForm" >Contact Form</h2>
           <!-- FXMM20162010 / Adding Contact Form-->
                 <p>
                     <b>Please, provide the following information: </b>
                 </p>
-                <form action="#" method="get" enctype="multipart/form-data">
+                <form  action="#" method="get" enctype="multipart/form-data">
                    			<fieldset>
 				<legend>Personal Information</legend>
 				<label>First Name
@@ -107,7 +110,7 @@
 					<textarea name="jobDescription" id="jobDescription" cols="50" rows="5"></textarea>
 				</label>
 				<br />
-				 <h3>¿Can we Contact your last employer?</h3>
+				 <h3>¿Are you looking for a Job?</h3>
 				<p>
 				<label>Yes
 					<input type="radio" name="contactinfo" value="yes" checked="checked" />
@@ -117,20 +120,35 @@
 				</label>
 				</p>
 				<br />
-				<label>Employer's Contact
-					<input type="text" name="eofworkphone" size="50" maxlength="50" />
-				</label>
+				<p>If your response is YES, please follow the next steps. We will not accept any job applications without this structure: </p>
+                	<ol>	
+				        <li>Fill this Form</li>
+				        <li>Upload your Resume</li>
+				        <li>Write in the description your motivation to work with us</li>
+			        </ol>
 				<br />
 			</fieldset>
 
                 </form>
-            
-                
+            <hr /> 
+            <h2 id="EmailInfo">Email Information</h2>
+                 <h3>You can contact us by sending an email to the following  Account:</h3>
+            	 <a href="maito:info@themiraclebucketsociety.com"> info@themiraclebucketsociety.com </a>
+            <hr />
+            <h2 id="Adress"> Visit Us</h2>
+                <h3 id="AddrsInfo">You are always welcome to come by to our offices if you are having: </h3>
+			        <ul>
+				        <li>Familiar Crisis</li>
+				        <li>Socioeconomic Challenges</li>
+				        <li>Health Issues</li>				
+			        </ul>
+                <p>Our current address is: </p>
+                <i>4721 Gladstone St, Vancouver, BC V5N 5A4</i>
       </main>
       <footer>
           <b>Follow our Social Media</b>
           <br />
-          <a href="https://www.facebook.com/themiraclebucketsociety/ "target="_blank">Facebook Page</a>
+          <a href="https://www.facebook.com/themiraclebucketsociety/" target="_blank">Facebook Page</a>
           <p>&copy; 2016 - The Miracle Bucket Society</p>
       </footer>
   </body>
