@@ -1,13 +1,16 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="en"  itemscope itemtype="http://schema.org/Organization">
   <head>
     <meta charset="utf-8">
     <meta name="description" content="contact page for The Miracle Bucket Society webPage">
     <meta name="author" content="Francisco Xavier Mercado Murguía">
     <link rel="icon" href="../../favicon.ico">
     <title>The Miracle Bucket Society-Contact Page</title>
+    <script type="text/javascript" src="js/swfobject.js"></script> <!--javascript class from the swfobject -->
+    <script type="text/javascript">
+        swfobject.registerObject("swfMovie", "9.0.0", "http://acacia.pntic.mec.es/agip0002/auro/myfamily.swf");
+    </script>
   </head>
-
   <body>
     <h1>The Miracle Bucket Society</h1>
 <!-- NAVBAR
@@ -26,27 +29,54 @@
           </nav>
       </header>
       <main>
-
           <!-- All content goes here dakota index.html / nick sponsor.html / tallis payments.html / xavier contact.html-->
           <h1> Contact </h1>
-          <p> There are several Ways To Contact The Miracle Bucket Society</p>
+          <p itemprop="brand"> There are several Ways To Contact The Miracle Bucket Society</p>
           <a href="#contactForm">By Contact Form</a>
 		  <a href="#EmailInfo">By Email</a>
 		  <a href="#Adress">Visit Us</a>
-              <h2 id="contactForm" >Contact Form</h2>
+              <h2 id="contactForm">Contact Form</h2>
           <!-- FXMM20162010 / Adding Contact Form-->
                 <p>
                     <b>Please, provide the following information: </b>
                 </p>
                 <form  action="#" method="get" enctype="multipart/form-data">
-                   			<fieldset>
-				<legend>Personal Information</legend>
-				<dl>	
+                <dl>	
 				    <dt>Company Persona:</dt>
 				    <dd>Use information of the contacting personal</dd>
 				    <dt>Colleges/Universities:</dt>
 				    <dd>Use information of your career coordinator.</dd>
 			    </dl>
+                <p>NOTE: If you want to send a fund cheque for The Miracle Bucket Society use the following information</p>
+                <br />
+                <table id="chequingInfo" >
+                    <caption>Cheque Information</caption>
+                    <thead>
+                        <tr>
+                           <th>Field</th>
+                           <th>Information</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                         <td>PayTo:</td>
+                         <td>The Miracle Bucket Society INC</td>
+                      </tr>
+                      <tr>
+                         <td>For:</td>
+                         <td>Donation</td>
+                      </tr>
+                    </tbody>
+                    <tfoot>
+                      <tr>
+                         <td rowspan="2">Thank you for all your help!!!</td>
+                      </tr>
+                     </tfoot>
+
+                </table>
+                <fieldset>
+                <legend>Personal Information</legend>
+				
                 <label>First Name
 					<input type="text" name="fname" size="35" maxlength="35" />
 				</label>
@@ -64,7 +94,7 @@
 				</label>
 				<br />
                <label>SIN
-					<input type="password" name="sinNumber" size="10" maxlength="10" />
+					<input type="password" name="sinNumber" size="10" maxlength="10"   />
 				</label>
 				<br />
 				<label>
@@ -96,14 +126,13 @@
 					</label>
 					</p>
                 <label>Telephone 
-					<input type="text" name="telephone" size="12" maxlength="12" />
+					<input type="tel" name="telephone" size="12" maxlength="12" required autofocus />
 				</label>			
 				<br />
 				<label>Email 
-					<input type="text" name="email" size="30" maxlength="30" />
+					<input type="email" name="email" size="30" maxlength="30" required placeholder="Enter a valid email address"/>
 				</label>
-				<br />		
-				
+				<br />					
 			</fieldset>
             <fieldset>
 				<legend>What can we do for you</legend>
@@ -137,15 +166,23 @@
 				        <li>Write in the description your motivation to work with us</li>
 			        </ol>
 				<br />
+             <fieldset>
+				<legend> Upload your Resume </legend>
+				<label>
+					<input type="file" name="resume" />
+				</label>
+					<input type="hidden" name="bUploaded" value="0" />
+			</fieldset>
+                <input type="Submit" name="SubmitApplication" value="Submit Form" />
 			</fieldset>
 
                 </form>
             <hr /> 
             <h2 id="EmailInfo">Email Information</h2>
                  <h3>You can contact us by sending an email to the following  Account:</h3>
-            	 <a href="maito:info@themiraclebucketsociety.com"> info@themiraclebucketsociety.com </a>
+            	 <a itemprop="email" href="maito:info@themiraclebucketsociety.com"> info@themiraclebucketsociety.com </a>
             <hr />
-            <h2 id="Adress"> Visit Us</h2>
+            <h2 class="addressHeader" id="Adress"> Visit Us</h2>
                 <h3 id="AddrsInfo">You are always welcome to come by to our offices if you are having: </h3>
 			        <ul>
 				        <li>Familiar Crisis</li>
@@ -153,16 +190,30 @@
 				        <li>Health Issues</li>				
 			        </ul>
                 <p>Our current address is: </p>
-                <i>4721 Gladstone St, Vancouver, BC V5N 5A4</i>
+                <i itemprop="address">4721 Gladstone St, Vancouver, BC V5N 5A4</i>
      
           <section>
-              <t>While you are here, enjoy this funny video:</t>
-          <video width="320" height="180">  <source src="vid/money.mp4" type="video/mp4"> Find Out more about us</video> 
+              <h3>While you are here, enjoy this funny video:</h3>
+               <br />
+          <video class="mp4Video" width="320" height="180"  src="vid/money.mp4"></video>
           </section>
-
+          <aside>
+               <div>	
+                <h3>Surprise!!! Enjoy this kids game while you are here: </h3>
+                <br />
+		    	<object class="swfMovie" id="swfMovie" type="application/x-shockwave-flash" width="900" height="520" data="http://acacia.pntic.mec.es/agip0002/auro/myfamily.swf"></object>
+		       </div>
+          </aside>
+         <figure>
+              <div>
+                  <!-- using figure to have iframe to the old page-->
+                  <b>While you are here, why dont you check this site:</b>
+                  <br />
+                  <iframe width="900" height="520" src="http://www.themiraclebucketsociety.com/live-auction-get-aways-2016/" name="lastSite"></iframe>
+              </div>     
+          </figure>
       </main>
-      
-      <footer>
+      <footer> 
           <b>Follow our Social Media</b>
           <br />
           <a href="https://www.facebook.com/themiraclebucketsociety/" target="_blank">Facebook Page</a>
