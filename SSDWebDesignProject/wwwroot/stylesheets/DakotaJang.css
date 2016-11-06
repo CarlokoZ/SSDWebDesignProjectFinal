@@ -1,0 +1,57 @@
+﻿body {
+}
+
+h1 {
+    display: none;
+}
+
+header > nav > ul > li {
+    display: inline-table;
+}
+
+header > nav > ul {
+    background-color: pink;
+}
+
+.contents {
+    width: 50%;
+    float: left;
+}
+
+    .contents li {
+        display: inline-table;
+    }
+
+.form {
+    width: 50%;
+    float: left;
+    clear: right;
+}
+
+.media {
+    clear: both;
+}
+
+    .media object, video, iframe {
+        height: 200px;
+    }
+
+    .media > div {
+        display: inline-block;
+    }
+
+    .media h2 {
+        max-width: 30vw;
+    }
+
+table {
+    outline: solid black 2px;
+    background-color:aqua;
+    width:100%;
+}
+table tr{
+}
+table td{
+    width:50%;
+    outline: solid black 2px;
+}
