@@ -1,17 +1,38 @@
 ﻿body {
+    padding: 0;
+    margin: 0;
+    background-image:url(../img/logo.jpg);
+    background-size: cover;
+    font-family: 'Averia Sans Libre', cursive;
 }
+
 
 h1 {
     display: none;
 }
 
-header > nav > ul > li {
-    display: inline-table;
+header {
+    padding: 0;
+    margin: 0;
 }
 
-header > nav > ul {
-    background-color: pink;
-}
+    header > img {
+        width: 100%;
+        max-width: 700px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    header > nav > ul > li {
+        display: inline-table;
+    }
+
+    header > nav > ul {
+        padding: 0;
+        margin: 0;
+        background-color: pink;
+    }
 
 .contents {
     width: 50%;
@@ -26,7 +47,17 @@ header > nav > ul {
     width: 50%;
     float: left;
     clear: right;
+    background-color:deepskyblue;
 }
+
+    .form label {
+        display: block;
+        max-width: 50vw;
+    }
+
+    .form input {
+        max-width: 50vw;
+    }
 
 .media {
     clear: both;
@@ -46,12 +77,14 @@ header > nav > ul {
 
 table {
     outline: solid black 2px;
-    background-color:aqua;
-    width:100%;
+    background-color: aqua;
+    width: 100%;
 }
-table tr{
-}
-table td{
-    width:50%;
-    outline: solid black 2px;
-}
+
+    table tr {
+    }
+
+    table td {
+        width: 50%;
+        outline: solid black 2px;
+    }
