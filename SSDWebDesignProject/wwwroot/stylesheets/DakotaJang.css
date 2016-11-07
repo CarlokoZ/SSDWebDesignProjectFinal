@@ -1,11 +1,13 @@
 ﻿body {
     padding: 0;
     margin: 0;
-    background-image:url(../img/logo.jpg);
+    background-image: url(../img/logo.jpg);
     background-size: cover;
     font-family: 'Averia Sans Libre', cursive;
+    background-color: #ee52e6;
+    background-image: repeating-linear-gradient(120deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px), repeating-linear-gradient(60deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px), linear-gradient(60deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)), linear-gradient(120deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1));
+    background-size: 70px 120px;
 }
-
 
 h1 {
     display: none;
@@ -32,6 +34,7 @@ header {
         padding: 0;
         margin: 0;
         background-color: pink;
+        display: inline-table;
     }
 
 .contents {
@@ -47,7 +50,7 @@ header {
     width: 50%;
     float: left;
     clear: right;
-    background-color:deepskyblue;
+    background-color: deepskyblue;
 }
 
     .form label {

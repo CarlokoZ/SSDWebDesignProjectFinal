@@ -19,6 +19,7 @@
 <!-- Note: I have missed some parts of page when I was copying/pasting either because they seemed unessessary or I am an idiot.
    - <header> has the <h1> with title of web site and the <nav> that links to other pages of this web site
    - <nav> also contains links for other member's stylesheets so we can all work in the same repository (jquery plugin)
+   - add id's for the two parts of <nav> <ul>'s
    -
    - <main> has 4 divs with class name: intra-links,contents,form,media
    - the content of each divs are described by the class name
@@ -33,21 +34,21 @@
     <header>
         <h1>The Miracle Bucket Society</h1>
         <nav>
-            <img id="imgHeader" src="img/logo.jpg" alt="logo" />
-            <ul>
+            <ul id="main-nav">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="whoarewe.html">Who Are We</a></li>
                 <li><a href="ourmission.html">Our Mission | Miracle Stories</a></li>
                 <li><a href="oursponsors.html">Our Sponsors</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-            <ul>
+            <ul id="style-nav">
                 <li><a href="serversideSwitch.html%3Fstyle=style1.html" rel="styles1" class="styleswitch">CarlosRado</a></li>
                 <li><a href="serversideSwitch.html%3Fstyle=style2.html" rel="styles2" class="styleswitch">DakotaJang</a></li>
                 <li><a href="serversideSwitch.html%3Fstyle=style3.html" rel="styles3" class="styleswitch">FrankCheng</a></li>
                 <li><a href="serversideSwitch.html%3Fstyle=style3.html" rel="styles4" class="styleswitch">XavierMercado</a></li>
             </ul>
         </nav>
+        <img id="imgHeader" src="img/logo.jpg" alt="logo" />
     </header>
     <main>
         <div class="intra-links">
