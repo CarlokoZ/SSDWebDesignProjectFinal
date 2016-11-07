@@ -40,6 +40,9 @@ header {
     float: right;
 }
 
+.intra-links a{
+    color:blue;
+}
 main {
     margin-left: auto;
     margin-right: auto;
