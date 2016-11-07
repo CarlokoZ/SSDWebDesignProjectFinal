@@ -124,17 +124,15 @@ footer {
         position: relative;
         float: left;
         background-color: #666;
+        width:49vw;
     }
 
     .menu a {
+        text-align:center;
         display: block;
         padding: .5em 1em;
         color: #fff;
         text-decoration: none;
-    }
-
-    .menu li li {
-        width: 8em;
     }
 
     .menu li:hover {
