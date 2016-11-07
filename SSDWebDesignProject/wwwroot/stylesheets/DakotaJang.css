@@ -41,18 +41,17 @@ header {
 }
 
 main {
-    margin-left:auto;
-    margin-right:auto;
-    width:90%;
-    max-width:700px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    max-width: 700px;
     background-color: rgba(255, 255, 255, 0.5);
     padding: 10px;
-    
 }
 
-    .contents li {
-        display: inline-table;
-    }
+.contents li {
+    display: inline-table;
+}
 
 .form {
     background-color: deepskyblue;
@@ -65,14 +64,15 @@ main {
 
     .form input {
         max-width: 100vw;
-        float:right;
+        float: right;
     }
-    
-    .form input[type=file] {
-        float:left;
-    }
+
+        .form input[type=file] {
+            float: left;
+        }
+
 .media {
-    overflow:hidden;
+    overflow: hidden;
 }
 
     .media object, video, iframe {
@@ -104,6 +104,43 @@ table {
 footer {
     background-color: rgba(255, 255, 255, 0.5);
 }
-footer>p{
-    margin-bottom:0;
+
+    footer > p {
+        margin-bottom: 0;
+    }
+
+.menu, .menu ul {
+    padding: 0;
+    list-style: none;
 }
+
+    .menu ul {
+        position: absolute;
+        left: -9999em;
+        z-index: 500;
+    }
+
+    .menu li {
+        position: relative;
+        float: left;
+        background-color: #666;
+    }
+
+    .menu a {
+        display: block;
+        padding: .5em 1em;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .menu li li {
+        width: 8em;
+    }
+
+    .menu li:hover {
+        background-color: #999;
+    }
+
+        .menu li:hover ul {
+            left: auto;
+        }
