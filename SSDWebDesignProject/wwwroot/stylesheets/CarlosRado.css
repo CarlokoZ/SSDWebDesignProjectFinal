@@ -1,2 +1,159 @@
-﻿body {
+﻿h1 {
+    display: none;
 }
+
+header {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(../img/logo.jpg);
+    background-size: cover;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    background-color: #9800c4;
+    background-image: repeating-linear-gradient(
+                      45deg, #9800c4,#9800c4 10px, #8600c4 10px, #8600c4 20px);
+    background-size: 85px 113px;
+}
+
+    header > img {
+        width: 100%;
+        max-width: 700px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    header > nav > ul {
+        padding: 0;
+        margin: 0;
+        display: inline-block;
+    }
+
+    header > nav > ul > li {
+        display: inline-block;
+    }
+
+table {
+    width: 100%;
+    outline: outset purple 1px;
+    background-color: rgba(134, 0, 196, 0.64);
+    color: #4a0036;
+}
+
+    table tr:hover {
+        background-color: #f85aff;
+        color: #33004a;
+    }
+
+    table td {
+        text-align:center;
+        width: 50%;
+        outline: solid pink 2px;
+    }
+
+footer {
+    background-color: rgba(200, 200, 200, 0.2);
+}
+
+    footer > p {
+        margin-bottom: 0;
+    }
+
+
+#style-nav {
+    float: right;
+}
+
+main {
+    color: #33004a;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    max-width: 700px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+}
+
+.intra-links a{
+    color: #8600c4;
+}
+
+.contents li {
+    display: inline-table;
+}
+
+.form {
+    background-color: rebeccapurple;
+}
+
+    .form label {
+        display: table-cell;
+        max-width: 100vw;
+        float: left;
+    }
+
+    .form input {
+        max-width: 100vw;
+        display: inline-block;
+        float: right;
+    }
+
+.media {
+    overflow: hidden;
+}
+
+    .media object, video {
+        height: 200px;
+        width: 333px;
+    }
+
+    .media iframe {
+        height: 400px;
+        width: 666px;
+    }
+
+    .media > div {
+        display: inline-block;
+    }
+
+    .media h2 {
+        max-width: 30vw;
+    }
+
+.menu, .menu ul {
+    padding: 0;
+    list-style: none;
+}
+
+    .menu ul {
+        position: absolute;
+        left: -9999em;
+        z-index: 500;
+        text-decoration: underline;
+    }
+
+    .menu li {
+        position: relative;
+        float: left;
+        background-color: rgba(134, 0, 196, 0.95);
+        width:49vw;
+    }
+
+    .menu a {
+        text-align:center;
+        display: flex;
+        padding: 1em 1em;
+        color: #f85aff;
+    }
+
+    .menu li:hover {
+        background-color: rgba(72, 0, 105, 0.95);
+    }
+
+        .menu li:hover ul {
+            left: auto;
+        }
