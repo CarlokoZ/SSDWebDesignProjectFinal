@@ -1,2 +1,181 @@
 ﻿body {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-image: url("../img/money_bg_2.jpg");
+    background-size: 100%;
+    background-repeat: repeat;
+    background-position: left top;
+}
+/* multicolumn styling*/
+header {
+    width: 100%;
+	height: 300px;
+    background-color: #D3D3D3;
+}
+.intra-links{
+	float: left;
+	width: 59%;
+	margin-right: 0.5%;
+}
+.contents {
+	float: left;
+	width: 40%;
+	margin-left: 0.5%;
+    background-image: url("../img/money_background.jpg");
+    background-size: 100%;
+    background-repeat: repeat;
+}
+.form{
+	float: left;
+	width: 59%;
+	margin-right: 0.5%;
+}
+.media {
+	float: left;
+	width: 40%;
+	margin-left: 0.5%;
+    background-image: url("../img/money_background.jpg");
+    background-repeat: repeat;
+}
+footer {
+	clear: both;
+	width: 100%;
+    background-color: #D3D3D3;
+    opacity: 0.7;
+}
+/* drop-down menus styling*/
+.menu, .menu ul {
+    padding: 0;
+    list-style: none; 
+}
+.menu ul {
+    position: absolute;
+    left: -9999em;
+    z-index: 500; 
+}
+.menu li {
+    position: relative;
+    float: left;
+    background-color: #666; 
+    min-width: 50%;
+}
+.menu a {
+    position: relative;
+    display: block;
+    padding: .5em 5em;
+    
+    color: #fff;
+    text-decoration: none; 
+    text-align: center;
+}
+.menu li li { 
+    width: 100%; 
+}
+.menu li:hover {
+    background-color: #999; 
+}
+.menu li:hover ul {
+    left: auto; 
+}
+/* header */
+h1 { 
+    font-size: 200%; 
+}
+header h1 {
+    text-align: center;
+    
+}
+footer h2, footer a, footer p {
+    font-size: 80%;
+    text-indent: 0;
+    line-height: 80%;
+    padding-top: 0.5em;
+    padding-right: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 0.5em;
+}
+h2 { 
+    font-size: 150%; 
+}
+h3, h4 { 
+    font-size: 100%; 
+}
+h1, h2, h3, h4, p {
+    text-align: left;
+    padding-top: 0.5em;
+    padding-right: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 0.5em;
+}
+
+/* img */
+#imgHeader{
+    width:100%;
+    height: 60%;
+}
+/* paragraphs */
+p{
+    font-size: 0.8em;
+    font-family: "Times New Roman", Times, serif;
+    text-align: left;
+    text-indent: 1em;
+    line-height: 200%;
+    word-wrap: break-word;
+}
+/* links styling */
+external.a:link{
+    color: #5688c6;
+}
+external.a:visited{
+    color: #546c8a;
+}
+external.a:focus, a:hover {
+    color: #358fff;
+}
+externala:active{
+    color:#ffbd1f
+}
+/* Table styling*/
+table {
+    margin-left:2%;
+    width: 96%;
+    border-collapse: collapse;
+}
+th {
+    height: 50px;
+    text-align: left;
+}
+table, th, td {
+    border: 1px solid black;
+}
+caption{
+    font-style: italic;
+    font-size: 30px;
+}
+/* Form styling */
+input:focus { 
+    background-color: #cfc; 
+}
+label {
+    float: left;
+    width: 100%;
+    text-align: left; 
+    line-height: 1.8;
+}
+input[type="text"]{
+    width: 80%;
+    margin-left: 10px; 
+}
+textarea { 
+    margin-left: 10px;
+    resize:vertical; 
+    max-height:200px; 
+    min-height:100px; 
+    min-width:100px;
+}
+/* video*/
+video {
+    width: 100%;
+    height: auto;
 }
