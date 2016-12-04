@@ -23,6 +23,7 @@ h1{
         position: absolute;
         left: -9999em;
         z-index: 500;
+        width:100%;
     }
 
     .menu li {
@@ -70,6 +71,7 @@ h2{
     list-style-position:inside
 }
 #star li,#platinum li,#gold li,#silver li{
+    display: block;
     text-align: center;
     list-style:none;
 }
@@ -149,18 +151,16 @@ footer{
         float:left;
     }
     #star img,#platinum img,#gold img,#silver img{
+        display: block;
         float:left;
         width:33.333%
     }
-    #star ul,#gold ul{
-        height:130px;
-        background-color:white;
-    }
-    #platinum ul,#silver ul{
-        height:160px;
+    #star ul,#gold ul,#platinum ul,#silver ul{
+        display: block;
         background-color:white;
     }
     #star h3,#platinum h3,#gold h3,#silver h3{
+        display: block;
         clear:both;
     }
     .media{
