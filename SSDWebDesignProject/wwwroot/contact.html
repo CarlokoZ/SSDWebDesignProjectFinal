@@ -43,7 +43,6 @@
         </nav>
         <img id="imgHeader" src="img/logo.jpg" alt="logo" />
     </header>
-
     <main>
         <div class="intra-links">
             <h2> Contact </h2>
@@ -53,7 +52,6 @@
                 <li><a href="#Adress">Visit Us</a></li>
             </ol>
         </div>
-
         <div class="contents">
             <h2>Please, provide the following information:</h2>
             <dl>
@@ -88,126 +86,146 @@
                 </tfoot>
             </table>
         </div>
-
         <div class="form">
             <h2>Form-Title</h2>
             <form action="#" method="post" enctype="multipart/form-data">
                 <fieldset>
                     <legend>Personal Information</legend>
-                    <label>
-                        First Name
-                        <input type="text" name="fname" size="35" maxlength="35" />
-                    </label>
-                    <br />
-                    <label>
-                        Last Name
-                        <input type="text" name="lname" size="35" maxlength="35" />
-                    </label>
-                    <br />
-                    <label>
-                        Address
-                        <input type="text" name="address" size="35" maxlength="100" />
-                    </label>
-                    <br />
-                    <label>
-                        Postal Code
-                        <input type="text" name="pcode" size="8" maxlength="8" />
-                    </label>
-                    <br />
-                    <label>
-                        SIN
-                        <input type="password" name="sinNumber" size="10" maxlength="10" />
-                    </label>
-                    <br />
-                    <label>
-                        Province
-                        <select name="province">
-                            <option value="QU" Selected="Selected">Quebec</option>
-                            <option value="NT">Northwest Territories</option>
-                            <option value="ON">Ontario</option>
-                            <option value="BC">British Columbia</option>
-                            <option value="AB">Alberta</option>
-                            <option value="SA">Saskatchewan</option>
-                            <option value="MA">Manitoba</option>
-                            <option value="YU">Yukon</option>
-                            <option value="NL">Newfoundland and Labrador</option>
-                            <option value="NB">New Brunswick</option>
-                            <option value="NS">Nova Scotia</option>
-                            <option value="PE">Prince Edward Island</option>
-                            <option value="NU">Nunavut</option>
-                        </select>
-                    </label>
-                    <br />
-                    <h3>Contact Preferences</h3>
-                    <p>
-                        <label>
-                            Telephone
+                    <ol>
+                        <li>
+                            <label>
+                                First Name
+                            </label>
+                            <input type="text" name="fname" size="35" maxlength="35" />
+                        </li>
+                        <li>
+                            <label>
+                                Last Name
+                            </label>
+                            <input type="text" name="lname" size="35" maxlength="35" />
+                        </li>
+                        <li>
+                            <label>
+                                Address
+                            </label>
+                            <input type="text" name="address" size="35" maxlength="100" />
+                        </li>
+                        <li>
+                            <label>
+                                Postal Code
+                            </label>
+                            <input type="text" name="pcode" size="8" maxlength="8" />
+                        </li>
+                        <li>
+                            <label>
+                                SIN
+                            </label>
+                            <input type="password" name="sinNumber" size="10" maxlength="10" />
+                        </li>
+                        <li>
+                            <label>
+                                Province
+                            </label>
+                            <select name="province">
+                                <option value="QU" Selected="Selected">Quebec</option>
+                                <option value="NT">Northwest Territories</option>
+                                <option value="ON">Ontario</option>
+                                <option value="BC">British Columbia</option>
+                                <option value="AB">Alberta</option>
+                                <option value="SA">Saskatchewan</option>
+                                <option value="MA">Manitoba</option>
+                                <option value="YU">Yukon</option>
+                                <option value="NL">Newfoundland and Labrador</option>
+                                <option value="NB">New Brunswick</option>
+                                <option value="NS">Nova Scotia</option>
+                                <option value="PE">Prince Edward Island</option>
+                                <option value="NU">Nunavut</option>
+                            </select>
+                        </li>
+                        <li>
+                            <h3>Contact Preferences</h3>
+                        </li>
+                        <li>
+                            <label>
+                                Telephone
+                            </label>
                             <input type="checkbox" name="contactpref" value="Telephone" />
-                        </label>
-                        <label>
-                            Email
+                        </li>
+                        <li>
+                            <label>
+                                Email
+                            </label>
                             <input type="checkbox" name="contactpref" value="Email" checked="checked" />
-                        </label>
-                    </p>
-                    <label>
-                        Telephone
-                        <input type="tel" name="telephone" size="12" maxlength="12" required />
-                    </label>
-                    <br />
-                    <label>
-                        Email
-                        <input type="email" name="email" size="30" maxlength="30" required placeholder="Enter a valid email address" />
-                    </label>
-                    <br />
+                        </li>
+                        <li>
+                            <label>
+                                Telephone
+                            </label>
+                            <input type="tel" name="telephone" size="12" maxlength="12" required />
+                        </li>
+                        <li>
+                            <label>
+                                Email
+                            </label>
+                            <input type="email" name="email" size="30" maxlength="30" required placeholder="Enter a valid email address" />
+                        </li>
+                    </ol>
                 </fieldset>
                 <fieldset>
                     <legend>What can we do for you</legend>
-                    <label>
-                        Select one or many according your needs:
-                        <select name="devices" multiple>
-                            <option value="ft" selected="selected">I want to be a Sponsor on The Miracle Bucet Society</option>
-                            <option value="pt">I want to work with The Miracle Bucet Society </option>
-                            <option value="is">Press Information</option>
-                            <option value="hd">Other</option>
-                        </select>
-                    </label>
-                    <br />
-                    <label>
-                        Please, write a description of your inquire:
-                        <textarea name="jobDescription" id="jobDescription" cols="50" rows="5"></textarea>
-                    </label>
-                    <br />
-                    <h3>¿Are you looking for a Job?</h3>
-                    <p>
-                        <label>
-                            Yes
-                            <input type="radio" name="contactinfo" value="yes" checked="checked" />
-                        </label>
-                        <label>
-                            No
-                            <input type="radio" name="contactinfo" value="no" />
-                        </label>
-                    </p>
-                    <br />
-                    <p>If your response is YES, please follow the next steps. We will not accept any job applications without this structure: </p>
                     <ol>
-                        <li>Fill this Form</li>
-                        <li>Upload your Resume</li>
-                        <li>Write in the description your motivation to work with us</li>
-                    </ol>
-                    <br />
-                    <fieldset>
-                        <legend> Upload your Resume </legend>
-                        <label>
+                        <li>
+                            <label>
+                                Select one or many according your needs:
+                            </label>
+                            <select name="devices" multiple>
+                                <option value="ft" selected="selected">I want to be a Sponsor on The Miracle Bucet Society</option>
+                                <option value="pt">I want to work with The Miracle Bucet Society </option>
+                                <option value="is">Press Information</option>
+                                <option value="hd">Other</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label>
+                                Please, write a description of your inquire:
+                            </label>
+                            <textarea name="jobDescription" id="jobDescription" cols="50" rows="5"></textarea>
+                        </li>
+                        <li>
+                            <h3>¿Are you looking for a Job?</h3>
+                        </li>
+                        <li>
+                            <label>
+                                Yes
+                            </label>
+                            <input type="radio" name="contactinfo" value="yes" checked="checked" />
+                        </li>
+                        <li>
+                            <label>
+                                No
+                            </label>
+                            <input type="radio" name="contactinfo" value="no" />
+                        </li>
+                        <li>
+                            <p>If your response is YES, please follow the next steps. We will not accept any job applications without this structure: </p>
+                        </li>
+                        <li>
+                            <ol>
+                                <li>Fill this Form</li>
+                                <li>Upload your Resume</li>
+                                <li>Write in the description your motivation to work with us</li>
+                            </ol>
+                        </li>
+                        <li>
+                            <label>Upload your Resume</label>
                             <input type="file" name="resume" />
-                        </label>
-                        <input type="hidden" name="bUploaded" value="0" />
-                    </fieldset>
+                        </li>
+                    </ol>
+                    <input type="hidden" name="bUploaded" value="0" />
                     <input type="Submit" name="SubmitApplication" value="Submit Form" />
                 </fieldset>
             </form>
         </div>
-
         <div class="media">
             <div id="video-div">
                 <h2>While you are here, enjoy this funny video</h2>
@@ -223,7 +241,6 @@
             </div>
         </div>
     </main>
-
     <footer>
         <h2>Follow our Social Media</h2>
         <a href="https://www.facebook.com/themiraclebucketsociety/ " target="_blank">Facebook Page</a>
