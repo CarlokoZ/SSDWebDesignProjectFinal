@@ -1,42 +1,59 @@
-﻿body {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    background-image: url("../img/money_bg_2.jpg");
+﻿@charset "UTF-8";
+/* CSS Document */
+body {
+	font-size: 16px;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height: 1.5;
+	font-weight: 400;
+	color: #333;
+    background-image: url("../img/BG_Pink_.jpg");
     background-size: 100%;
     background-repeat: repeat;
     background-position: left top;
+    
+    padding-top: 0em;
+    padding-right: 0em;
+    padding-bottom: 0em;
+    padding-left: 0em;
+    
+    margin-left:0.5%;
+    margin-right:0.5%;
+    
+    text-align: left;
+    
+    /* Box Shadow */
+    -webkit-box-shadow: 6px -2px 9px 0px rgba(50, 48, 50, 0.57);
+    -moz-box-shadow:    6px -2px 9px 0px rgba(50, 48, 50, 0.57);
+    box-shadow:         6px -2px 9px 0px rgba(50, 48, 50, 0.57);
 }
-/* multicolumn styling*/
+/* Multicolumn styling*/
 header {
     width: 100%;
-	height: 300px;
+	height: 40%;
     background-color: #D3D3D3;
 }
-.intra-links{
-	float: left;
-	width: 59%;
-	margin-right: 0.5%;
-}
-.contents {
-	float: left;
-	width: 40%;
-	margin-left: 0.5%;
-    background-image: url("../img/money_background.jpg");
-    background-size: 100%;
-    background-repeat: repeat;
-}
-.form{
-	float: left;
-	width: 59%;
-	margin-right: 0.5%;
-}
-.media {
-	float: left;
-	width: 40%;
-	margin-left: 0.5%;
-    background-image: url("../img/money_background.jpg");
-    background-repeat: repeat;
+@media(min-width: 800px) {
+    main {
+        width: 100%;
+        display:flex;
+        flex-wrap: wrap;
+    }
+    .intra-links{
+        width: 20%;
+        order:1;
+    }
+    .contents {
+        width: 100%;
+        order:4;
+    }
+    .form{
+        width: 40%;
+        order:2;
+    }
+    .media {
+        width: 40%;
+        order:3;
+    }
 }
 footer {
 	clear: both;
@@ -44,7 +61,7 @@ footer {
     background-color: #D3D3D3;
     opacity: 0.7;
 }
-/* drop-down menus styling*/
+/* Drop-down menus styling*/
 .menu, .menu ul {
     padding: 0;
     list-style: none; 
@@ -55,19 +72,20 @@ footer {
     z-index: 500; 
 }
 .menu li {
+    display: block;
     position: relative;
     float: left;
     background-color: #666; 
-    min-width: 50%;
+    width: 50%;
 }
 .menu a {
     position: relative;
     display: block;
-    padding: .5em 5em;
-    
+    padding: 0em 0em;
+    width: 100%;
     color: #fff;
     text-decoration: none; 
-    text-align: center;
+    text-align: left;
 }
 .menu li li { 
     width: 100%; 
@@ -78,73 +96,69 @@ footer {
 .menu li:hover ul {
     left: auto; 
 }
-/* header */
+/* Headings */
 h1 { 
     font-size: 200%; 
+    /* Text Shadow */
+    text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
 }
-header h1 {
+header > h1 {
     text-align: center;
-    
-}
-footer h2, footer a, footer p {
-    font-size: 80%;
-    text-indent: 0;
-    line-height: 80%;
-    padding-top: 0.5em;
-    padding-right: 0.5em;
-    padding-bottom: 0.5em;
-    padding-left: 0.5em;
 }
 h2 { 
     font-size: 150%; 
+    /* Text Shadow */
+    text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
+}
+footer h2, footer a, footer > p {
+    font-size: 80%;
+    text-indent: 0;
+    line-height: 80%;
 }
 h3, h4 { 
     font-size: 100%; 
 }
-h1, h2, h3, h4, p {
-    text-align: left;
-    padding-top: 0.5em;
-    padding-right: 0.5em;
-    padding-bottom: 0.5em;
-    padding-left: 0.5em;
-}
-
-/* img */
-#imgHeader{
-    width:100%;
-    height: 60%;
-}
 /* paragraphs */
-p{
-    font-size: 0.8em;
-    font-family: "Times New Roman", Times, serif;
-    text-align: left;
-    text-indent: 1em;
+p {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    text-indent: 4em;
     line-height: 200%;
     word-wrap: break-word;
 }
-/* links styling */
-external.a:link{
+/* Images */
+img {
+    width: 100%;
+    height: 100%;
+}
+a > img {
+    width:20%;
+    display: inline;
+}
+/* Media */
+video, object, iframe{
+    width: 100%;
+    height: 100%;
+}
+/* Links styling */
+external.a:link {
     color: #5688c6;
 }
-external.a:visited{
+external.a:visited {
     color: #546c8a;
 }
-external.a:focus, a:hover {
+external.a:focus, .a:hover {
     color: #358fff;
 }
-externala:active{
+externala:active {
     color:#ffbd1f
 }
 /* Table styling*/
 table {
-    margin-left:2%;
-    width: 96%;
+    width: 100%;
     border-collapse: collapse;
 }
 th {
     height: 50px;
-    text-align: left;
 }
 table, th, td {
     border: 1px solid black;
@@ -154,28 +168,14 @@ caption{
     font-size: 30px;
 }
 /* Form styling */
+fieldset{
+    display: flex;
+}
 input:focus { 
     background-color: #cfc; 
 }
-label {
-    float: left;
-    width: 100%;
-    text-align: left; 
-    line-height: 1.8;
-}
-input[type="text"]{
+select, input[type="text"], input[type="email"], input[type="file"], textarea{
+    overflow:auto;
     width: 80%;
-    margin-left: 10px; 
-}
-textarea { 
-    margin-left: 10px;
     resize:vertical; 
-    max-height:200px; 
-    min-height:100px; 
-    min-width:100px;
-}
-/* video*/
-video {
-    width: 100%;
-    height: auto;
 }
