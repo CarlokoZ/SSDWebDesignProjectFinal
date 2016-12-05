@@ -65,9 +65,6 @@ body{
 	line-height:1.4em; 
 	font-weight:normal;
     background-color: #ebe0ea;
-	background-image: url("img/overlay.png"), -moz-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-	background-image: url("img/overlay.png"), -webkit-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-	background-image: url("img/overlay.png"), -ms-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
 	background-image: url("img/overlay.png"), linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
 }
 h1 {
@@ -78,7 +75,6 @@ h1 {
     font-size:200%;
 	margin:.45em 0;
 	padding:0;
-    float:both;
 } 
 h2, h3, h4, h5, h6{
     color:#f2f2f2;
@@ -86,8 +82,7 @@ h2, h3, h4, h5, h6{
 	font-family: 'Raleway', sans-serif;
 	line-height:1.5em;
 	margin:.45em 0;
-	padding:0;
-    float:both;
+	padding:0; 
 } 
 /* links */
 a:link {color:cadetblue;}
@@ -99,7 +94,6 @@ a:active {color: yellow;}
     border-collapse: collapse; 
     text-align: left; 
     width: 100%; 
-
 } 
 table td,  table th
  { 
@@ -107,28 +101,23 @@ table td,  table th
 }
 table thead th 
 {
-    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #652299), color-stop(1, #4D1A75) );
-    background:-moz-linear-gradient( center top, #652299 5%, #4D1A75 100% );
-    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#652299', endColorstr='#4D1A75');
     background-color:#652299;
     color:#FFFFFF; 
     font-size: 15px;
     font-weight: bold; 
     border-left: 1px solid #714399; 
 } 
- table thead th:first-child 
-{ 
-    border: none; 
-}
+
  table tbody td 
 {
      color: #4D1A75; 
      border-left: 1px solid #E7BDFF;
      font-size: 12px;font-weight: normal;
-
 }
  table tbody  td
- { background: #F4E3FF; color: #4D1A75; }
+ { background: #F4E3FF; color: #4D1A75; 
+
+ }
 
  table tbody td:first-child {
      border-left: none; 
@@ -136,7 +125,6 @@ table thead th
 }
  table tbody tr:last-child td {
      border-bottom: none; 
-
 }
 /*definition lists*/
 dl {
@@ -157,9 +145,6 @@ dl {
     padding: 0 0 0.5em 0;
   }
 
-/* Box sizing. */
-*{	box-sizing:border-box;
-	-moz-box-sizing:border-box;}
 /* structure */   
 .wrapper{
 	width: 92%; 
@@ -203,8 +188,7 @@ header{
 	padding:15px 0;
 }
 #imgHeader{ 
-	text-align:center;
-    float:both;
+	text-align:center;   
     width:100%;
 }
 /*ordered lists*/	
@@ -215,9 +199,6 @@ header{
 	padding:20px 0;
 }
 
-#form {
-float:both;
-}
 .flexslider{
 	display:none;
 }
@@ -232,38 +213,30 @@ float:left;
 width:50%;
 }
 /*custom contact.html classes.*/
-.intra-links {  
-    float:both;
+.intra-links {    
     width:100%;
 }
 .contents {  
-	margin:40px 0;
     float:left;
     width:50%;
 }
-    .contents #paragraph {
-    float:both;
-    width:80%;
+ .contents #paragraph {  
+    width:50%;
     }
-#chequingInfo {
-    float:both;
+#chequingInfo { 
     width:100%;
-
 }
 /*custom sponsors.html classes*/
 .contents #star{
-float:both;
 width:100%;
-
 }
 .contents #platinum {
-    float:both;
-    width:75%;
+       width:80%;
 }
 
 .contents, #gold {
     float:left;
-    width:50%
+    width:60%
 }
 
 .contents #silver {
@@ -373,7 +346,7 @@ footer ul{
   clear: both;
 }
 .media {
-float:both;
+
 width:100%;
 }
 form h3{
@@ -415,17 +388,17 @@ Resizing and changing parameters for the media screen
 @media (max-width: 600px) {
     #video-div h2{
         clear:both;
-        float:both;
+        
         text-align:initial;
     }
     form {
     clear:both;
-    float:both;
-    width:80%;
+    
+    width:90%;
     }
     .contents {
-     float:both;
-    width:100%;
+    align-content:center;
+    width:90%;
     }
     .wrapper{
 	    max-width: 1200px; 
@@ -471,7 +444,7 @@ Resizing and changing parameters for the media screen
   }
     .menu li {
     clear:left;
-    float:both;
+    
     width:100%;
     }
 }
@@ -481,8 +454,6 @@ form {
     box-shadow: 
         0px 0px 0px 5px rgba( 255,255,255,0.4 ), 
         0px 4px 20px rgba( 0,0,0,0.33 );
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
     border-radius: 5px;
     display: table;
     position: static;
@@ -505,8 +476,6 @@ form .inputs label {
 form .inputs input[type=email], input[type=password],input[type=text],input[type=email] {
     background: #f5f5f5;
     font-size: 0.8rem;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
     border-radius: 3px;
     border: none;
     padding: 13px 10px;
