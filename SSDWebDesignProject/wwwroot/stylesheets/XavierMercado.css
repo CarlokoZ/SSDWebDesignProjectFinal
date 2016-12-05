@@ -1,8 +1,5 @@
-﻿
-
-/* Importing fonts */
-@import url('https://fonts.googleapis.com/css?family=Oswald|Tangerine');
-
+﻿/* Importing fonts */
+@import url('https://fonts.googleapis.com/css?family=Oswald|Raleway');
 /*Reset CSS*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -35,6 +32,14 @@ body {
 ol, ul {
 	list-style: none;
 }
+ol .active {
+    background-color:#c788cc;
+    color: white;
+}
+
+    ol li {
+    display: inline;
+    }
 blockquote, q {
 	quotes: none;
 }
@@ -52,6 +57,7 @@ table {
 /* Starting with the normal elements*/
 /*colors and backgrounds*/
 /* Type */
+
 body{
 	color:#f2f2f2;
 	font-family: 'Oswald', sans-serif;
@@ -64,36 +70,102 @@ body{
 	background-image: url("img/overlay.png"), -ms-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
 	background-image: url("img/overlay.png"), linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
 }
-h1, h2, h3, h4, h5, h6{
+h1 {
     color:#f2f2f2;
 	font-weight:bold;
-	font-family: 'Tangerine', cursive;
-   
+	font-family: 'Raleway', sans-serif;
+    text-align:center;
+    font-size:200%;
+	margin:.45em 0;
+	padding:0;
+    float:both;
+} 
+h2, h3, h4, h5, h6{
+    color:#f2f2f2;
+	font-weight:bold;
+	font-family: 'Raleway', sans-serif;
 	line-height:1.5em;
 	margin:.45em 0;
 	padding:0;
     float:both;
 } 
-
-
 /* links */
-a,
-a:visited,
-a:active,
-a:hover{color:#0099ff;}
-a:hover{ text-decoration:none;}
+a:link {color:cadetblue;}
+a:visited {text-decoration:none;}
+a:hover {background-color:lightcoral}
+a:active {color: yellow;}
+/*tables*/
+ table { 
+    border-collapse: collapse; 
+    text-align: left; 
+    width: 100%; 
 
+} 
+table td,  table th
+ { 
+    padding: 3px 10px; 
+}
+table thead th 
+{
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #652299), color-stop(1, #4D1A75) );
+    background:-moz-linear-gradient( center top, #652299 5%, #4D1A75 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#652299', endColorstr='#4D1A75');
+    background-color:#652299;
+    color:#FFFFFF; 
+    font-size: 15px;
+    font-weight: bold; 
+    border-left: 1px solid #714399; 
+} 
+ table thead th:first-child 
+{ 
+    border: none; 
+}
+ table tbody td 
+{
+     color: #4D1A75; 
+     border-left: 1px solid #E7BDFF;
+     font-size: 12px;font-weight: normal;
 
-/* Box sizing. Awesome thing. Read about it here: http://www.w3schools.com/cssref/css3_pr_box-sizing.asp */
+}
+ table tbody  td
+ { background: #F4E3FF; color: #4D1A75; }
+
+ table tbody td:first-child {
+     border-left: none; 
+
+}
+ table tbody tr:last-child td {
+     border-bottom: none; 
+
+}
+/*definition lists*/
+dl {
+    border: 3px double #ccc;
+    padding: 0.5em;
+}
+  
+  dt {
+    float: left;
+    clear: left;
+    text-align: right;
+    font-weight: bold;
+    color: darkmagenta;
+  }
+
+  dd {
+    margin: 0 0 0 110px;
+    padding: 0 0 0.5em 0;
+  }
+
+/* Box sizing. */
 *{	box-sizing:border-box;
 	-moz-box-sizing:border-box;}
-
-  
 /* structure */   
 .wrapper{
 	width: 92%; 
 	margin: 0 auto;
 }
+/*menu page and style changer*/
 .menu, .menu ul {
     padding: 0;
     list-style: none; 
@@ -106,7 +178,7 @@ a:hover{ text-decoration:none;}
 .menu li {
     position: relative;
     float: left;
-    background-color: #666; 
+    background-color: #c623a5; 
     min-width: 50%;
 }
 .menu a {
@@ -114,7 +186,7 @@ a:hover{ text-decoration:none;}
     display: block;
     padding: .5em 5em;
     
-    color: #fff;
+    color:lightyellow;
     text-decoration: none; 
     text-align: center;
 }
@@ -135,8 +207,7 @@ header{
     float:both;
     width:100%;
 }
-	
-#contents,
+/*ordered lists*/	
 #page-header{
 	background:#f3f3f3;
 	border-top:1px solid #e2e2e2;
@@ -144,35 +215,89 @@ header{
 	padding:20px 0;
 }
 
-
+#form {
+float:both;
+}
 .flexslider{
 	display:none;
 }
 
-#contents {  
+/*custom ourmission.html classes*/
+.form {
+float:left;
+width:50%;
+}
+#donations {
+float:left;
+width:50%;
+}
+/*custom contact.html classes.*/
+#intra-links {  
+    float:left;
+    width:20%;
+}
+.contents {  
 	margin:40px 0;
     float:left;
     width:50%;
 }
-#chequingInfo {  
-	margin:40px 0;
-    float:left;
-    width:50%;
+    .contents #paragraph {
+    float:both;
+    width:80%;
+    }
+#chequingInfo {
+    float:both;
+    width:100%;
+
+}
+/*custom sponsors.html classes*/
+.contents #star{
+float:both;
+width:100%;
+
+}
+.contents #platinum {
+    float:both;
+    width:75%;
 }
 
+.contents, #gold {
+    float:left;
+    width:50%
+}
 
+.contents #silver {
+float:left;
+width:50%;
+}
+.contents li {
+ display: inline;
+    }
+    .contents #star li img {
+        width:50%;
+    }
+    .contents #platinum li img {
+        width:40%;
+    }
+    .contents #gold li img {
+        width:30%;
+    }
+    .contents #silver li img {
+        width:20%;
+    } 
+    video,object,iframe{
+    width:100%;
+}
+object{
+    height:300px
+}
 aside { 
 	margin:40px 0;
 }
 
 p{ margin:0 0 1.5em;}
 
-
-/* RESPONSIVE IMAGES */
-img{ max-width:100%; height:auto;}
-
-
-/*MAIN MENU*/
+/*main menu*/
 .menu-toggle{
 	display:block;
 	padding:10px;
@@ -220,86 +345,21 @@ img{ max-width:100%; height:auto;}
 	padding-left:80px;
 }
 
-/*SECONDARY MENU*/
-#secondary-navigation{
-	margin-bottom:60px;
-}
-#secondary-navigation ul{
-	margin:0;
-	padding:0;
-}
-#secondary-navigation ul li a{ 
-	background:#E6E6E6;
-	display:block;
-	margin:5px 0; 
-	padding:10px;
-	text-decoration:none;
-}
-#secondary-navigation ul li a:hover,
-#secondary-navigation ul li.current a{
-	background:#0099ff;
-	color:#fff;
-}
 
 /*FOOTER*/
 footer{  
 	clear:both;
 	font-size:80%;
 	padding:20px 0;
+    background:#333;
+	color:#ccc;
+
 }
 footer ul{
 	margin:0;
 	padding:0;
 }
-
-
-
-		@media screen and (max-width: 1680px) {
-
-			body, input, select, textarea {
-				font-size: 14pt;
-			}
-
-		}
-
-		@media screen and (max-width: 1280px) {
-
-			body, input, select, textarea {
-				font-size: 12pt;
-			}
-
-		}
-
-		@media screen and (max-width: 360px) {
-
-			body, input, select, textarea {
-				font-size: 11pt;
-			}
-
-		}
-
-footer{ 
-	background:#333;
-	color:#ccc;
-}
-a.buttonlink{ 
-	background:#0099ff; 
-	border-radius:7px; 
-	color:#fff;
-	display:block;
-	float:left; 
-	margin:10px 15px 10px 0; 
-	padding:10px;
-	text-decoration:none;
-}
-a.buttonlink:hover{
-	background:#8dbc01;
-}
-
-
-
-
-/* Contain floats*/ 
+/* clearfixing floats*/ 
 .clearfix:before,
 .clearfix:after,
 .row:before,
@@ -312,158 +372,145 @@ a.buttonlink:hover{
 .row:after{
   clear: both;
 }
-
+.media {
+float:both;
+width:100%;
+}
 
 /*
-LARGER MOBILE DEVICES
-This is for mobile devices with a bit larger screens.
+Resizing and changing parameters for the media screen
 */
-@media only screen and (min-width: 481px) {
-#imgHeader{
-	float:left;
-	text-align:left;
-	margin-bottom:-20px;/*this depends on the height of the logo*/
-}
-.menu-toggle{/*make menu float right, instead of sitting under the logo*/
-	margin-top:10px; /*this depends on the height of the logo*/
-	float:right;
-}
-
-} 
-
-/*
-TABLET & SMALLER LAPTOPS
-The average viewing window and preferred media query for those is 768px.
-But I think that some more breathing space is good:)
-*/
-@media only screen and (min-width: 920px) {
-
-.wrapper{
-	max-width: 1200px; 
-	margin: .75em auto;
-}
-
-#imgHeader{ 
-	float:left; 
-	text-align:left;
-	margin-bottom:0px;
-}
-header{
-	padding:0;
-}
-#content {  
-	float:left;
-	width:65%;
-}
-#content.wide-content{
-	float:none;
-	width:100%;
-}
-
-.flexslider{
-display:block;
-/*demo 1 slider theme*/	
-margin: 0 0 60px; 
-background: #fff; 
-border: 4px solid #fff; 
--webkit-border-radius: 4px; 
--moz-border-radius: 4px; 
--o-border-radius: 4px; 
-border-radius: 4px; 
-box-shadow: 0 1px 4px rgba(0,0,0,.2); 
--webkit-box-shadow: 0 1px 4px rgba(0,0,0,.2); 
--moz-box-shadow: 0 1px 4px rgba(0,0,0,.2); 
--o-box-shadow: 0 1px 4px rgba(0,0,0,.2);
-}
-
-
-aside { 
-	float:right;
-	width:30%;
-}
-
-/*** MAIN MENU - ESSENTIAL STYLES ***/
-.menu-toggle{display:none;}
-#menu-main-navigation{display:block;}
-
-ul.srt-menu li:hover li ul,
-ul.srt-menu li.sfHover li ul {
-	top:			-999em;
-}
-ul.srt-menu li li:hover ul,
-ul.srt-menu li li.sfHover ul {
-	left:			12em; /* match ul width */
-	top:			0;
-}
-ul.srt-menu li li:hover li ul,
-ul.srt-menu li li.sfHover li ul {
-	top:			-999em;
-}
-ul.srt-menu li li li:hover ul,
-ul.srt-menu li li li.sfHover ul {
-	left:			10em; /* match ul width */
-	top:			0;
-}
-
-
-/*GRID*/
-/*
- & Columns : 12 
-
- */
- .row{
-	 margin-left: -15px;
-     margin-right: -15px;
-}
- 
-
-
-.rightfloat{float:right;}
-/* @notation inspired by tinyGrid, .row and percentage by Twitter Bootstrap
- */
- 
-#hero [class*="grid_"] { margin-bottom:-20px;}
+@media (min-width: 768px) {
+     #video-div {
+    float:left;
+    width:30%;
+    }
+    #flash-div {
+    float:left;
+    width:30%;
+    }
+    #iframe-div {
+    float:left;
+    width:30%;
+    }
 
 }
+@media only screen and (max-width: 600px) {
+    .form {
+     float:both;
+    width:100%;
+    }
+    .contents {
+     float:both;
+    width:100%;
+    }
+    .wrapper{
+	    max-width: 1200px; 
+	    margin: .75em auto;
+    }
 
-/*
-DESKTOP
-This is the average viewing window. So Desktops, Laptops, and
-in general anyone not viewing on a mobile device. Here's where
-you can add resource intensive styles.
-*/
-@media only screen and (min-width: 1030px) {
+    #imgHeader{ 
+	    float:left; 
+	    text-align:left;
+	    margin-bottom:0px;
+    }
+    header{
+	    padding:0;
+    }
+    aside { 
+	    float:right;
+	    width:30%;
+    }
 
-} 
-
-/*
-LARGE VIEWING SIZE
-This is for the larger monitors and possibly full screen viewers.
-*/
-@media only screen and (min-width: 1240px) {
-
-} 
-
-/*
-RETINA (2x RESOLUTION DEVICES)
-This applies to the retina iPhone (4s) and iPad (2,3) along with
-other displays with a 2x resolution.
-*/
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-       only screen and (min--moz-device-pixel-ratio: 1.5),
-       only screen and (min-device-pixel-ratio: 1.5) {
-
-
-} 
-
-/*
-iPHONE 5 MEDIA QUERY
-iPhone 5 or iPod Touch 5th generation styles (you can include your own file if you want)
-*/
-@media (device-height: 568px) and (-webkit-min-device-pixel-ratio: 2) { 
-
-  
+   
+    h1 {
+    font-size:50%;
+    }
+    form .inputs label {
+    font-size: 8px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    margin-bottom: 7px;
+    display: block;
+    }
+    dl {
+    width:100%;
+        }
+    dt {
+    text-align: end;
+    font-weight:normal;
+    color: darkmagenta;
+  }
+    .menu {
+    float:both;
+    width:100%;
+    }
+}
+form {
+    padding: 0px 25px 25px;
+    background: #fff;
+    color:#4D1A75;
+    box-shadow: 
+        0px 0px 0px 5px rgba( 255,255,255,0.4 ), 
+        0px 4px 20px rgba( 0,0,0,0.33 );
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    display: table;
+    position: static;
+}
+    form fieldset legend {
+    color:#4D1A75;
+    }
+form .inputs {
+    margin-top: 25px;
 }
 
+form .inputs label {
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-bottom: 7px;
+    display: block;
+}
+
+form .inputs input[type=email], input[type=password],input[type=text],input[type=email] {
+    background: #f5f5f5;
+    font-size: 0.8rem;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: none;
+    padding: 13px 10px;
+    width: 330px;
+    margin-bottom: 20px;
+    box-shadow: inset 0px 2px 3px rgba( 0,0,0,0.1 );
+    clear: both;
+}
+
+form .inputs input[type=checkbox] {
+    float: left;
+    margin-right: 10px;
+    margin-top: 3px;
+}
+
+form input[type=submit] {
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px 0;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-align: center;
+    box-shadow:
+        0px 5px 5px rgba(000,000,000,0.1),
+        inset 0px 1px 0px rgba(255,255,255,0.5);
+    text-shadow:
+        0px 1px 3px rgba(000,000,000,0.3),
+        0px 0px 0px rgba(255,255,255,0);
+    display: table;
+    position: static;
+    clear: both;
+}
 
 
