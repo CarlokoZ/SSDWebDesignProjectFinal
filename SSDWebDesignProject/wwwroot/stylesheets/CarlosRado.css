@@ -57,10 +57,18 @@ table {
 
 footer {
     background-color: rgba(200, 200, 200, 0.2);
+    text-align:center;
+}
+
+footer a {
+    text-decoration:none;
+    font-size:large;
+    color: aqua;
 }
 
     footer > p {
-        margin-bottom: 0;
+        margin-bottom: 2px;
+
     }
 
 
@@ -87,6 +95,7 @@ main {
 }
 
 .form {
+    color: pink;
     background-color: rebeccapurple;
 }
 
@@ -100,6 +109,26 @@ main {
         max-width: 100vw;
         display: inline-block;
         float: right;
+    }
+    .form input[name=billingAddress]{
+        float: left;
+        position: absolute;
+        left: 450px;
+        width: 360px;
+    }
+    .form input[name=address]{
+        float: left;
+        position: absolute;
+        left: 450px;
+        width: 360px;
+    }
+
+    .form input[name=sinNumber]{
+        float: right;
+    }
+    .form input[name=pcode]{
+        float:right;
+        width: 150px
     }
 
 .media {
@@ -122,6 +151,11 @@ main {
 
     .media h2 {
         max-width: 30vw;
+        text-align: center;
+    }
+    #iframe-div h2{
+        max-width: 80vw;
+        vertical-align: middle;
     }
 
 .menu, .menu ul {
@@ -143,6 +177,11 @@ main {
         width:49vw;
     }
 
+    .menu ul li:last-child {
+        border-bottom-right-radius: 12px;
+        border-bottom-left-radius: 12px;
+    }
+
     .menu a {
         text-align:center;
         display: flex;
@@ -156,4 +195,37 @@ main {
 
         .menu li:hover ul {
             left: auto;
-        }
+    }
+    
+    fieldset li{
+        width: 100%;
+        clear: both;
+    }
+
+    fieldset ol {
+       list-style-type: none;
+   }
+
+    fieldset ol li select {
+       float:right;
+    }
+
+    fieldset select[name=province] {
+       float:right;
+       width: 200px;
+   }
+
+    fieldset select option{
+       float: left;
+       width: 420px;
+    }
+    
+    fieldset input[name=contactpref] {
+        float:left;
+        left: 400px;
+        position: absolute;
+    }
+    textarea[name=address]{
+        float:left;
+        width: 90%;
+    }
