@@ -43,7 +43,6 @@
         </nav>
         <img id="imgHeader" src="img/logo.jpg" alt="logo" />
     </header>
-
     <main>
         <div class="intra-links">
             <h2>Levels of The Sponsors</h2>
@@ -54,7 +53,6 @@
                 <li><a href="#silver"><strong>Silver</strong></a></li>
             </ol>
         </div>
-
         <div class="contents">
             <!-- add sponsor logos and names -->
             <h2>Sponsors' Names and Logos</h2>
@@ -106,104 +104,124 @@
                 </tr>
                 <tr>
                     <td>Gold</td>
-                    <td rowspan="2">$1000/year</td>
+                    <td>$1000/year</td>
                 </tr>
                 <tr>
                     <td>Silver</td>
+                    <td>$500/year</td>
                 </tr>
             </table>
         </div>
-
         <div class="form">
             <h2>Sponsorship Appliaction Form</h2>
             <form action="#" method="post" enctype="multipart/form-data">
                 <fieldset>
-                    <h3>Company Name</h3>
-                    <input type="text" name="company_name" value="" />
-                    <h3>Company Type</h3>
-                    <p>
-                        <label>
-                            Sole Proprietorship
+                    <ol>
+                        <li>
+                            <label>Company Name</label>
+                            <input type="text" name="company_name" value="" />
+                        </li>
+                        <li><h3>Company Type</h3></li>
+                        <li>
+                            <label>
+                                Sole Proprietorship
+                            </label>
                             <input type="radio" name="type" value="sole_proprietorship" checked="checked" />
-                        </label>
-                        <label>
-                            Partnership
+                        </li>
+                        <li>
+                            <label>Partnership</label>
                             <input type="radio" name="type" value="partnership" />
-                        </label>
-                        <label>
-                            Corporation
+                        </li>
+                        <li>
+                            <label>
+                                Corporation
+                            </label>
                             <input type="radio" name="type" value="corporation" />
-                        </label>
-                        <label>
-                            Co-operative
+                        </li>
+                        <li>
+                            <label>
+                                Co-operative
+                            </label>
                             <input type="radio" name="type" value="co-operative" />
-                        </label>
-                    </p>
-                    <h3>Choose Your Sponsor Title</h3>
-                    <p>
-                        <label>
-                            Star: $3000/year
+                        </li>
+                        <li><h3>Choose Your Sponsor Title</h3></li>
+                        <li>
+                            <label>
+                                Star: $3000/year
+                            </label>
                             <input type="radio" name="title" value="star" checked="checked" />
-                        </label>
-                        <label>
-                            Platinum: $2000/year
+                        </li>
+                        <li>
+                            <label>
+                                Platinum: $2000/year
+                            </label>
                             <input type="radio" name="title" value="platinum" />
-                        </label>
-                        <label>
-                            Gold: $1500/year
+                        </li>
+                        <li>
+                            <label>
+                                Gold: $1500/year
+                            </label>
                             <input type="radio" name="title" value="gold" />
-                        </label>
-                        <label>
-                            Silver: $1000/year
+                        </li>
+                        <li>
+                            <label>
+                                Silver: $1000/year
+                            </label>
                             <input type="radio" name="title" value="silver" />
-                        </label>
-                    </p>
-                    <h3>How Does Your Company Know About Us</h3>
-                    <p>
-                        <label>
-                            Ads
+                        </li>
+                        <li><h3>How Does Your Company Know About Us</h3></li>
+                        <li>
+                            <label>
+                                Ads
+                            </label>
                             <input type="checkbox" name="ways_to_know" value="ads" checked="checked" />
-                        </label>
-                        <label>
-                            Internet
+                        </li>
+                        <li>
+                            <label>
+                                Internet
+                            </label>
                             <input type="checkbox" name="ways_to_know" value="internet" />
-                        </label>
-                        <label>
-                            Business Conference
+                        </li>
+                        <li>
+                            <label>
+                                Business Conference
+                            </label>
                             <input type="checkbox" name="ways_to_know" value="business_conference" />
-                        </label>
-                        <label>
-                            Others
+                        </li>
+                        <li>
+                            <label>
+                                Others
+                            </label>
                             <input type="checkbox" name="ways_to_know" value="others" />
-                        </label>
-                    </p>
-
-                    <h3>Select The City Your Company Is Located</h3>
-                    <select>
-                        <option value="vancouver">Vancouver</option>
-                        <option value="burnaby">Burnaby</option>
-                        <option value="richmond">Richmond</option>
-                        <option value="surrey">Surrey</option>
-                        <option value="vernon">Vernon</option>
-                        <option value="prince george">Prince George</option>
-                        <option value="kamloops">Kamloops</option>
-                        <option value="kelownay">Kelowna</option>
-                    </select>
-
-                    <h3>Tell Us About Your Company</h3>
-                    <label for="address">Why Do You Want To Be A Sponsor</label>
-                    <textarea name="address" id="address" cols="30" rows="5"></textarea><br />
-
-                    <h3>Upload Your Company Detail Information </h3>
-                    <label>
-                        <input type="file" name="file" />
-                    </label>
+                        </li>
+                        <li>
+                            <label>Select The City Your Company Is Located</label>
+                            <select>
+                                <option value="vancouver">Vancouver</option>
+                                <option value="burnaby">Burnaby</option>
+                                <option value="richmond">Richmond</option>
+                                <option value="surrey">Surrey</option>
+                                <option value="vernon">Vernon</option>
+                                <option value="prince george">Prince George</option>
+                                <option value="kamloops">Kamloops</option>
+                                <option value="kelowna">Kelowna</option>
+                            </select>
+                        </li>
+                        <li><h3>Tell Us About Your Company</h3></li>
+                        <li>
+                            <label for="address">Why Do You Want To Be A Sponsor</label>
+                            <textarea name="address" id="address" cols="30" rows="5"></textarea>
+                        </li>
+                        <li>
+                            <label>Upload Your Company Detail Information </label>
+                            <input type="file" name="file" />
+                        </li>
+                    </ol>
                     <input type="hidden" name="sponsor" value="sponsor_appliaction" />
                     <input type="submit" name="submit" value="Submit Application" />
                 </fieldset>
             </form>
         </div>
-
         <div class="media">
             <div id="video-div">
                 <h2>Video-title</h2>
@@ -219,9 +237,7 @@
             </div>
         </div>
     </main>
-
     <footer>
-        <h2>Follow our Social Media</h2>
         <a href="https://www.facebook.com/themiraclebucketsociety/ " target="_blank">Facebook Page</a>
         <p>&copy; 2016 - The Miracle Bucket Society</p>
     </footer>
