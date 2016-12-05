@@ -63,7 +63,7 @@ h1{
 .contents{
     padding: 0 1em;
 }
-h2{
+h2,h3{
     text-align: center;
 }
 .contents li{
@@ -150,6 +150,21 @@ footer{
     .contents:not(table){
         float:left;
     }
+    h2{
+        text-align:left;
+        font-size:1.5em
+    }
+    .intra-links{
+        text-align:left;
+        padding:1em
+    }
+    .intra-links li{
+        display:inline;
+    }
+    .intra-links li:hover{
+        color: white;
+        background-color: green;
+    }
     #star img,#platinum img,#gold img,#silver img{
         display: block;
         float:left;
@@ -168,6 +183,8 @@ footer{
         clear:both;
     }
     .media h2{
+        padding-left:1em;
+        font-size:1em;
         text-align:initial;
     }
     video,object,iframe{
