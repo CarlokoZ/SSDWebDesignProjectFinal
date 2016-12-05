@@ -232,9 +232,9 @@ float:left;
 width:50%;
 }
 /*custom contact.html classes.*/
-#intra-links {  
-    float:left;
-    width:20%;
+.intra-links {  
+    float:both;
+    width:100%;
 }
 .contents {  
 	margin:40px 0;
@@ -376,7 +376,23 @@ footer ul{
 float:both;
 width:100%;
 }
-
+form h3{
+    clear: both;
+    font-weight:700;
+}
+form li{
+    width:100%;
+    clear: both;
+}
+form label{
+    width:45%;
+    display:block;
+    float:left;
+    clear: both;
+}
+.media h2{
+        text-align:initial;
+    }
 /*
 Resizing and changing parameters for the media screen
 */
@@ -394,11 +410,18 @@ Resizing and changing parameters for the media screen
     width:30%;
     }
 
+
 }
-@media only screen and (max-width: 600px) {
-    .form {
-     float:both;
-    width:100%;
+@media (max-width: 600px) {
+    #video-div h2{
+        clear:both;
+        float:both;
+        text-align:initial;
+    }
+    form {
+    clear:both;
+    float:both;
+    width:80%;
     }
     .contents {
      float:both;
@@ -424,7 +447,12 @@ Resizing and changing parameters for the media screen
 
    
     h1 {
-    font-size:50%;
+    font-size:80%;
+    }
+    h2 {
+    font-size:70%;
+    text-align:center;
+    width:100%;
     }
     form .inputs label {
     font-size: 8px;
@@ -441,13 +469,13 @@ Resizing and changing parameters for the media screen
     font-weight:normal;
     color: darkmagenta;
   }
-    .menu {
+    .menu li {
+    clear:left;
     float:both;
     width:100%;
     }
 }
 form {
-    padding: 0px 25px 25px;
     background: #fff;
     color:#4D1A75;
     box-shadow: 
@@ -487,6 +515,10 @@ form .inputs input[type=email], input[type=password],input[type=text],input[type
     box-shadow: inset 0px 2px 3px rgba( 0,0,0,0.1 );
     clear: both;
 }
+
+    form textarea {
+     width: 330px;
+    }
 
 form .inputs input[type=checkbox] {
     float: left;
