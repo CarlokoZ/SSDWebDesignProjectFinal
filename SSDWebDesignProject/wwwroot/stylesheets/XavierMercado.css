@@ -234,7 +234,7 @@ width:100%;
        width:80%;
 }
 
-.contents, #gold {
+.contents #gold {
     float:left;
     width:60%
 }
@@ -284,40 +284,6 @@ p{ margin:0 0 1.5em;}
 .menu-toggle.toggled-on{
 	background:#0099ff;
 }
-.srt-menu{
-	display:none;
-}	
-.srt-menu.toggled-on{
-	display:block;
-	position:relative;
-	z-index:10;
-}
-
-.srt-menu{
-	clear:both;
-	margin-bottom:60px;
-	
-}
-.srt-menu li a {
-	background:#dadada;
-	display:block;
-	margin:1px 0; 
-	padding:10px;
-	text-decoration:none;
-}
-.srt-menu li a:hover{
-	background:#0099ff;
-	color:#fff;
-}
-.srt-menu li li a {
-	background:#e8e8e8;
-	padding-left:40px;
-}
-.srt-menu li li li a {
-	background:#efefef;
-	padding-left:80px;
-}
-
 
 /*FOOTER*/
 footer{  
@@ -427,8 +393,8 @@ Resizing and changing parameters for the media screen
     text-align:center;
     width:100%;
     }
-    form .inputs label {
-    font-size: 8px;
+    form  label {
+    font-size: 12px;
     font-weight: 100;
     letter-spacing: 1px;
     margin-bottom: 7px;
@@ -461,11 +427,11 @@ form {
     form fieldset legend {
     color:#4D1A75;
     }
-form .inputs {
+form  {
     margin-top: 25px;
 }
 
-form .inputs label {
+form  label {
     font-size: 12px;
     font-weight: 300;
     letter-spacing: 1px;
@@ -473,7 +439,7 @@ form .inputs label {
     display: block;
 }
 
-form .inputs input[type=email], input[type=password],input[type=text],input[type=email] {
+form input[type=email], input[type=password],input[type=text],input[type=email] {
     background: #f5f5f5;
     font-size: 0.8rem;
     border-radius: 3px;
@@ -489,7 +455,12 @@ form .inputs input[type=email], input[type=password],input[type=text],input[type
      width: 330px;
     }
 
-form .inputs input[type=checkbox] {
+form  input[type=checkbox] {
+    float: left;
+    margin-right: 10px;
+    margin-top: 3px;
+}
+form  input[type=radio] {
     float: left;
     margin-right: 10px;
     margin-top: 3px;
