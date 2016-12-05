@@ -111,14 +111,10 @@ main {
         float: right;
     }
     .form input[name=billingAddress]{
-        float: left;
-        position: absolute;
         left: 450px;
         width: 360px;
     }
     .form input[name=address]{
-        float: left;
-        position: absolute;
         left: 450px;
         width: 360px;
     }
@@ -130,6 +126,14 @@ main {
         float:right;
         width: 150px
     }
+    .form input[type=submit]{
+        float: right;
+    }
+    .form input[type=file]{
+        float: right;
+        padding: 16px;
+    }
+
 
 .media {
     overflow: hidden;
@@ -220,11 +224,6 @@ main {
        width: 420px;
     }
     
-    fieldset input[name=contactpref] {
-        float:left;
-        left: 400px;
-        position: absolute;
-    }
     textarea[name=address]{
         float:left;
         width: 90%;
